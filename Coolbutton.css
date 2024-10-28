@@ -1,0 +1,126 @@
+
+
+.subcribe-button{
+    background-color: rgb(200, 0, 0);
+    color: aliceblue;
+    border: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 8px;
+
+}
+.join-button{
+background-color: white;
+border-color:rgb(6, 95, 212);
+border-style:solid;
+border-width: 1px;
+color: rgb(6, 95, 212);
+height: 36px;
+width: 62px;
+cursor: pointer;
+
+}
+.join-button:hover{
+background-color: rgb(6, 95, 212);
+color: white;
+}
+.Tweet-button{
+background-color: rgb(2, 158, 255);
+color: aliceblue;
+cursor: pointer;
+border-radius: 18px;
+border: none;
+height: 36px;    
+width: 74px;
+font-weight: bold;
+font-size: 15px;
+margin-left: 8px;
+}
+
+.request-button{
+background-color: black;
+color: white;
+border: none;
+height: 36px;
+width: 100px;
+cursor: pointer;
+
+
+}
+.addtocart-button{
+background-color: rgb(255, 216, 20);
+color: black;
+border-radius: 20px;
+height: 40px;
+width: 150px;
+font-weight: 549;
+border: none;
+margin-left: 8px;
+cursor: pointer;
+}
+.sign-up-button{
+background-color: rgb(46, 164, 79);
+color: white;
+border: none;
+font-weight: 549;
+height: 37px;
+width: 74px;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 5px;
+margin-left: 5px;
+}
+.Get-started-button{
+    background-color: rgb(121,82,179);
+    height: 39px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 549;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 5px;
+
+}
+.Download-button{
+    background-color: rgba(242, 244, 245, 0.86);
+    height: 40px;
+    width: 90px;
+    border-radius: 3px;
+    border-width: 1px;
+    font-weight: 550;
+    cursor: pointer;
+    margin-left: 5px;
+    color: rgb(108, 117, 125);
+    border-color: rgb(108, 117, 125);
+    
+}
+.apply-on-company-website-button{
+background-color: rgb(10, 102, 194);
+height: 40px;
+width: 205px;
+border-radius: 15px;
+color: white;
+border-width: 0px;
+font-weight: 549;
+font-style: unset;
+}
+.save-button{
+background-color: rgba(242, 244, 245, 0.86);
+height: 40px;
+width: 69px;
+border-radius: 17px;
+border-width: 1px;
+font-weight: 799;
+cursor: pointer;
+margin-left: 5px;
+color: rgb(10, 102, 194);
+border-color: rgb(10, 102, 194);
+margin-top: 5px;
+margin-left: 5px;
+
+}
