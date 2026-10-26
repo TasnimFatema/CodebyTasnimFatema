@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEAVE CALCULATOR</title>
+</head>
+<body>
+     <table border="1">
+        <tr>
+            <td>Month</td>
+            <td>Leaves</td>
+            <td>Paid</td>
+            <td>Unpaid</td>
+            <td>Remaining</td>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td><input type="text" id="janl" onchange="jana()"></td>
+            <td><input type="text" id="janp"></td>
+            <td><input type="text" id="janu"></td>
+            <td><input type="text" id="janr"></td>
+        </tr>
+        <tr>
+            <td>Feb</td>
+            <td><input type="text" id="febl" onchange="feba()"></td>
+            <td><input type="text" id="febp"></td>
+            <td><input type="text" id="febu"></td>
+            <td><input type="text" id="febr"></td>
+        </tr>
+        <tr>
+            <td>Mar</td>
+            <td><input type="text" id="marchl" onchange="marcha()"></td>
+            <td><input type="text" id="marchp"></td>
+            <td><input type="text" id="marchu"></td>
+            <td><input type="text" id="marchr"></td>
+        </tr>
+        <tr>
+            <td>Apr</td>
+            <td><input type="text" id="aprill" onchange="aprila()"></td>
+            <td><input type="text" id="aprilp"></td>
+            <td><input type="text" id="aprilu"></td>
+            <td><input type="text" id="aprilr"></td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td><input type="text" id="mayl" onchange="maya()"></td>
+            <td><input type="text" id="mayp"></td>
+            <td><input type="text" id="mayu"></td>
+            <td><input type="text" id="mayr"></td>
+        </tr>
+        <tr>
+            <td>Jun</td>
+            <td><input type="text" id="junel" onchange="junea()"></td>
+            <td><input type="text" id="junep"></td>
+            <td><input type="text" id="juneu"></td>
+            <td><input type="text" id="juner"></td>
+        </tr>
+        <tr>
+            <td>Jul</td>
+            <td><input type="text" id="julyl" onchange="julya()"></td>
+            <td><input type="text" id="julyp"></td>
+            <td><input type="text" id="julyu"></td>
+            <td><input type="text" id="julyr"></td>
+        </tr>
+        <tr>
+            <td>Aug</td>
+            <td><input type="text" id="augustl" onchange="augusta()"></td>
+            <td><input type="text" id="augustp"></td>
+            <td><input type="text" id="augustu"></td>
+            <td><input type="text" id="augustr"></td>
+        </tr>
+        <tr>
+            <td>Sep</td>
+            <td><input type="text" id="sepl" onchange="sepa()"></td>
+            <td><input type="text" id="sepp"></td>
+            <td><input type="text" id="sepu"></td>
+            <td><input type="text" id="sepr"></td>
+        </tr>
+        <tr>
+            <td>Oct</td>
+            <td><input type="text" id="octl" onchange="octa()"></td>
+            <td><input type="text" id="octp"></td>
+            <td><input type="text" id="octu"></td>
+            <td><input type="text" id="octr"></td>
+        </tr>
+        <tr>
+            <td>Nov</td>
+            <td><input type="text" id="novl" onchange="nova()"></td>
+            <td><input type="text" id="novp"></td>
+            <td><input type="text" id="novu"></td>
+            <td><input type="text" id="novr"></td>
+        </tr>
+        <tr>
+            <td>Dec</td>
+            <td><input type="text" id="decl" onchange="deca()"></td>
+            <td><input type="text" id="decp"></td>
+            <td><input type="text" id="decu"></td>
+            <td><input type="text" id="decr"></td>
+        </tr>
+    </table>
+    <script>
+        var cl;
+        function jana() {
+            var c=12;
+            var janl=document.getElementById("janl").value;
+            if(janl>=3){
+                var janu=janl-3;
+                document.getElementById("janu").value=janu;
+                document.getElementById("janp").value=3;
+                janp=3;
+                var janr=c-janp;
+                cl=janr;
+                document.getElementById("janr").value=janr;
+            }
+            else{
+                var janp=janl;
+                var janu=janl-janp;
+                document.getElementById("janu").value=janu;
+                document.getElementById("janp").value=janl;
+                var janr=c-janp;
+                cl=janr;
+                document.getElementById("janr").value=janr;
+            }
+        }
+        function feba(){
+            var febl=document.getElementById("febl").value;
+            if(febl>=3){
+                var febu=febl-3;
+                document.getElementById("febu").value=febu;
+                document.getElementById("febp").value=3;
+                febp=3;
+                var febr=cl-febp;
+                cl=febr;
+                document.getElementById("febr").value=febr;
+            }
+            else{
+                var febp=febl;
+                var febu=febl-febp;
+                document.getElementById("febu").value=febu;
+                document.getElementById("febp").value=febl;
+                var febr=cl-febp;
+                cl=febr;
+                document.getElementById("febr").value=febr;
+            }
+        }
+        function marcha(){
+            var marchl=document.getElementById("marchl").value;
+            if(marchl>=3){
+                var marchu=marchl-3;
+                document.getElementById("marchu").value=marchu;
+                document.getElementById("marchp").value=3;
+                marchp=3;
+                var marchr=cl-marchp;
+                cl=marchr;
+                document.getElementById("marchr").value=marchr;
+            }
+            else{
+                var marchp=marchl;
+                var marchu=marchl-marchp;
+                document.getElementById("marchu").value=marchu;
+                document.getElementById("marchp").value=marchl;
+                var marchr=cl-marchp;
+                cl=marchr;
+                document.getElementById("marchr").value=marchr;
+            }
+        }
+        function aprila(){
+            var aprill=document.getElementById("aprill").value;
+            if(aprill>=3){
+                var aprilu=aprill-3;
+                document.getElementById("aprilu").value=aprilu;
+                document.getElementById("aprilp").value=3;
+                aprilp=3;
+                var aprilr=cl-aprilp;
+                cl=aprilr;
+                document.getElementById("aprilr").value=aprilr;
+            }
+            else{
+                var aprilp=aprill;
+                var aprilu=aprill-aprilp;
+                document.getElementById("aprilu").value=aprilu;
+                document.getElementById("aprilp").value=aprill;
+                var aprilr=cl-aprilp;
+                cl=aprilr;
+                document.getElementById("aprilr").value=aprilr;
+            }
+        }
+        function maya(){
+            var mayl=document.getElementById("mayl").value;
+            if(mayl>=3){
+                var mayu=mayl-3;
+                document.getElementById("mayu").value=mayu;
+                document.getElementById("mayp").value=3;
+                mayp=3;
+                var mayr=cl-mayp;
+                cl=mayr;
+                document.getElementById("mayr").value=mayr;
+            }
+            else{
+                var mayp=mayl;
+                var mayu=mayl-mayp;
+                document.getElementById("mayu").value=mayu;
+                document.getElementById("mayp").value=mayl;
+                var mayr=cl-mayp;
+                cl=mayr;
+                document.getElementById("mayr").value=mayr;
+            }
+        }
+        function junea(){
+            var junel=document.getElementById("junel").value;
+            if(junel>=3){
+                var juneu=junel-3;
+                document.getElementById("juneu").value=juneu;
+                document.getElementById("junep").value=3;
+                junep=3;
+                var juner=cl-junep;
+                cl=juner;
+                document.getElementById("juner").value=juner;
+            }
+            else{
+                var junep=junel;
+                var juneu=junel-junep;
+                document.getElementById("juneu").value=juneu;
+                document.getElementById("junep").value=junel;
+                var juner=cl-junep;
+                cl=juner;
+                document.getElementById("juner").value=juner;
+            }
+        }
+        function julya(){
+            var julyl=document.getElementById("julyl").value;
+            if(julyl>=3){
+                var julyu=julyl-3;
+                document.getElementById("julyu").value=julyu;
+                document.getElementById("julyp").value=3;
+                julyp=3;
+                var julyr=cl-julyp;
+                cl=julyr;
+                document.getElementById("julyr").value=julyr;
+            }
+            else{
+                var julyp=julyl;
+                var julyu=julyl-julyp;
+                document.getElementById("julyu").value=julyu;
+                document.getElementById("julyp").value=julyl;
+                var julyr=cl-julyp;
+                cl=julyr;
+                document.getElementById("julyr").value=julyr;
+            }
+        }
+        function augusta(){
+            var augustl=document.getElementById("augustl").value;
+            if(augustl>=3){
+                var augustu=augustl-3;
+                document.getElementById("augustu").value=augustu;
+                document.getElementById("augustp").value=3;
+                augustp=3;
+                var augustr=cl-augustp;
+                cl=augustr;
+                document.getElementById("augustr").value=augustr;
+            }
+            else{
+                var augustp=augustl;
+                var augustu=augustl-augustp;
+                document.getElementById("augustu").value=augustu;
+                document.getElementById("augustp").value=augustl;
+                var augustr=cl-augustp;
+                cl=augustr;
+                document.getElementById("augustr").value=augustr;
+            }
+        }
+        function sepa(){
+            var sepl=document.getElementById("sepl").value;
+            if(sepl>=3){
+                var sepu=sepl-3;
+                document.getElementById("sepu").value=sepu;
+                document.getElementById("sepp").value=3;
+                sepp=3;
+                var sepr=cl-sepp;
+                cl=sepr;
+                document.getElementById("sepr").value=sepr;
+            }
+            else{
+                var sepp=sepl;
+                var sepu=sepl-sepp;
+                document.getElementById("sepu").value=sepu;
+                document.getElementById("sepp").value=sepl;
+                var sepr=cl-sepp;
+                cl=sepr;
+                document.getElementById("sepr").value=sepr;
+            }
+        }
+        function octa(){
+            var octl=document.getElementById("octl").value;
+            if(octl>=3){
+                var octu=octl-3;
+                document.getElementById("octu").value=octu;
+                document.getElementById("octp").value=3;
+                octp=3;
+                var octr=cl-octp;
+                cl=octr;
+                document.getElementById("octr").value=octr;
+            }
+            else{
+                var octp=octl;
+                var octu=octl-octp;
+                document.getElementById("octu").value=octu;
+                document.getElementById("octp").value=octl;
+                var octr=cl-octp;
+                cl=octr;
+                document.getElementById("octr").value=octr;
+            }
+        }
+        function nova(){
+            var novl=document.getElementById("novl").value;
+            if(novl>=3){
+                var novu=novl-3;
+                document.getElementById("novu").value=novu;
+                document.getElementById("novp").value=3;
+                novp=3;
+                var novr=cl-novp;
+                cl=novr;
+                document.getElementById("novr").value=novr;
+            }
+            else{
+                var novp=novl;
+                var novu=novl-novp;
+                document.getElementById("novu").value=novu;
+                document.getElementById("novp").value=novl;
+                var novr=cl-novp;
+                cl=novr;
+                document.getElementById("novr").value=novr;
+            }
+        }
+        function deca(){
+            var decl=document.getElementById("decl").value;
+            if(decl>=3){
+                var decu=decl-3;
+                document.getElementById("decu").value=decu;
+                document.getElementById("decp").value=3;
+                decp=3;
+                var decr=cl-decp;
+                cl=decr;
+                document.getElementById("decr").value=decr;
+            }
+            else{
+                var decp=decl;
+                var decu=decl-decp;
+                document.getElementById("decu").value=decu;
+                document.getElementById("decp").value=decl;
+                var decr=cl-decp;
+                cl=decr;
+                document.getElementById("decr").value=decr;
+            }
+        }
+    </script>
+</body>
+</html>
